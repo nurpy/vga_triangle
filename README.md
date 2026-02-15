@@ -35,4 +35,5 @@ Currently have triangle algo in python\
 
 
 
+![Triangle Rasterizer Demo](img.png)
 
