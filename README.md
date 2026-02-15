@@ -1,6 +1,3 @@
-<<<<<<< HEAD
-# vga_triangle
-=======
 
 Currently have triangle algo in python\
 
@@ -39,4 +36,3 @@ Currently have triangle algo in python\
 
 
 
->>>>>>> master
