@@ -5,7 +5,7 @@ import math
 
 
 
-grid = [['█' for _ in range(120)] for _ in range(30)]
+grid = [['█' for _ in range(30)] for _ in range(30)]
 RESET = "\033[0m"
 
 
@@ -84,27 +84,28 @@ def fill_Triangle(vert_a,vert_b,vert_c):
             if decision:
                 color = get_rgb_ansi(colors[0],colors[1],colors[2])
                 grid[i][j] =f"{color}█{RESET}"
+                grid[i][j] =f'▓'
 
     return
 
 #120 x 30
-a = Vertex(0,0)
-b = Vertex(20,119)
-c = Vertex(29,0)
+a = Vertex(5,0)
+b = Vertex(10,20)
+c = Vertex(20,11)
 #a.print()
 #b.print()
 #c.print()
 
-a2 = Vertex(10,0)
-b2 = Vertex(12,119)
-c2 = Vertex(28,20)
+a2 = Vertex(5,0)
+b2 = Vertex(10,20)
+c2 = Vertex(20,11)
 
 fill_Triangle(a,b,c)
-fill_Triangle(a2,b2,c2)
+#fill_Triangle(a2,b2,c2)
 
-a2.print()
-b2.print()
-c2.print()
+#a2.print()
+#b2.print()
+#c2.print()
 for i in grid:
     nums=""
     for j in i:
